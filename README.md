@@ -2,4 +2,4 @@
 
 Simple, one page app built with React
 
-!["Picture"] (https://github.com/anastasiarez/hello-react/blob/master/public/Hello%20React.jpg)
+!["Picture"](https://github.com/anastasiarez/hello-react/blob/master/public/Hello%20React.jpg)
