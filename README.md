@@ -1,3 +1,5 @@
 # Hello React
 
-This repository contains the starter code for a Lighthouse Labs coding challenge.
+Simple, one page app built with React
+
+![Picture] (/home/labber/anastasiia.work/REACT/hello-react/Hello React.jpg)

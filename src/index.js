@@ -31,7 +31,7 @@ const Application = () => {
         onChange={handleInputChange} // Handle changes in the input
       />
       <Button onClick={reset}>Reset</Button>
-      {name && <h1>Hello {name}</h1>}
+      {name && <h1>Hello, {name}</h1>}
     </main>
   );
 };
