@@ -3,22 +3,35 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 const Button = (props) => {
-  // your code here
+  return (
+    <button onClick={props.onClick} className="Button">
+      {props.children}
+    </button>
+  );
 };
 
 const Application = () => {
-
-  // your code here
+  const [name, setName] = useState('');
 
   const reset = () => {
+    setName(''); // Clears the input field
     console.log("reset");
-    // your code here
+  };
+
+  const handleInputChange = (event) => {
+    setName(event.target.value); // Update the name state with the input value
   };
 
   return (
     <main>
-      {/* your code here -- this entire line including the curly braces can be removed */}
-      <h1>Hello React</h1>
+      <input
+        type="text"
+        placeholder="Type your name"
+        value={name} // Bind the input value to the name state
+        onChange={handleInputChange} // Handle changes in the input
+      />
+      <Button onClick={reset}>Reset</Button>
+      {name && <h1>Hello {name}</h1>}
     </main>
   );
 };
