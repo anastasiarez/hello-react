@@ -37,3 +37,5 @@ const Application = () => {
 };
 
 ReactDOM.render(<Application />, document.getElementById("root"));
+
+const [first, setfirst] = useState(second)
